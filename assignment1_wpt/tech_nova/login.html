@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova HR - Login</title>
+
+    <!-- Connect the shared CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="login-page">
+    <!-- Navigation -->
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="directory.html">Employee Directory</a>
+      <a href="onboarding.html">Onboarding</a>
+    </nav>
+
+    <!-- Login card -->
+    <div class="login-card">
+      <h2>TechNova Solutions</h2>
+      <p>Employee Portal Login</p>
+
+      <form action="#" method="post">
+        <input
+          class="login-input"
+          type="text"
+          name="username"
+          placeholder="Enter username"
+          aria-label="Username"
+          required
+        />
+
+        <input
+          class="login-input"
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          aria-label="Password"
+          required
+        />
+
+        <button id="login-button" type="submit">Login</button>
+      </form>
+
+      <p>
+        Need an account?
+        <a class="signup-link" href="onboarding.html">Sign Up</a>
+      </p>
+    </div>
+  </body>
+</html>

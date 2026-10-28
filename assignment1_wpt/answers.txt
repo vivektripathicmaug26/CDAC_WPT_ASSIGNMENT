@@ -1,0 +1,32 @@
+##answer 1
+
+in my words with simple langauge with short
+1. How a website works
+User opens my portfolio link in a browser.
+
+The browser sends a request to the server.
+
+The server finds and sends the website files like HTML, CSS and images.
+
+The browser uses these files to display my portfolio.
+
+If data is needed, the server processes it using app logic and communicates with the database.
+
+Finally, the result is shown to the user.
+
+2. Client–server diagram
+Client (Browser)
+
+User opens portfolio
+
+Request and Response
+
+Server
+
+Sends files and runs app logic
+
+Database
+
+Stores data, if needed
+
+App logic runs on the server, and the database stores information. A simple portfolio may not need a database.

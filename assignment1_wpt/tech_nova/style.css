@@ -1,0 +1,205 @@
+
+/* Common styling for all three pages */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #243247;
+}
+
+/* Navigation row */
+nav {
+    background-color: #173b57;
+    padding: 16px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #79e0c1;
+}
+
+/* Common page container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Directory table */
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th {
+    background-color: #173b57;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ccd6e0;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Onboarding form */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-group input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bccbd8;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.form-group input[type="file"] {
+    max-width: 100%;
+}
+
+.form-buttons button {
+    padding: 11px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #147d64;
+    color: white;
+}
+
+.reset-btn {
+    background-color: #e0e7ef;
+    color: #243247;
+}
+
+.help-btn {
+    background-color: #dbeafe;
+    color: #173b57;
+}
+
+.office-map {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    margin-top: 15px;
+}
+
+/* Login page */
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #173b57, #3c8d9e);
+}
+
+.login-card {
+    width: 340px;
+    height: 390px;
+    max-width: 92%;
+    background-color: white;
+    border-radius: 16px;
+    text-align: center;
+    margin: 70px auto;
+    padding: 30px 25px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px 8px;
+    margin: 12px 0;
+    border: none;
+    border-bottom: 2px solid #9aafbd;
+    outline: none;
+    font-size: 15px;
+}
+
+.login-input:focus {
+    border-bottom-color: #147d64;
+}
+
+#login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background-color: #147d64;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-button:hover {
+    background-color: #0b4f42;
+}
+
+.signup-link {
+    color: #147d64;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* Small-screen support */
+@media (max-width: 650px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .container {
+        width: 96%;
+        padding: 10px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+    .login-card {
+        margin-top: 40px;
+    }
+}

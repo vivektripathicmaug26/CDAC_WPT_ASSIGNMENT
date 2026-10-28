@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova HR - Employee Onboarding</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="directory.html">Employee Directory</a>
+      <a href="onboarding.html">Onboarding</a>
+    </nav>
+
+    <div class="container">
+      <h1>New Employee Onboarding</h1>
+      <p>Please complete the joining form below.</p>
+
+      <!-- POST is appropriate for submitting form data.
+             A backend endpoint must be configured for actual submission. -->
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Official Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@technova.example"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Temporary Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a temporary password"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+
+        <div class="form-group">
+          <label for="joining-date">Joining Date:</label>
+          <input type="date" id="joining-date" name="joining_date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="orientation">Orientation Slot:</label>
+          <input
+            type="datetime-local"
+            id="orientation"
+            name="orientation"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="reporting-time">Reporting Time on Day One:</label>
+          <input
+            type="time"
+            id="reporting-time"
+            name="reporting_time"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Gender:</label>
+
+          <input
+            type="radio"
+            id="gender-male"
+            name="gender"
+            value="male"
+            required
+          />
+          <label for="gender-male">Male</label>
+
+          <input type="radio" id="gender-female" name="gender" value="female" />
+          <label for="gender-female">Female</label>
+
+          <input type="radio" id="gender-other" name="gender" value="other" />
+          <label for="gender-other">Other</label>
+
+          <input
+            type="radio"
+            id="gender-prefer-not"
+            name="gender"
+            value="prefer-not-to-say"
+          />
+          <label for="gender-prefer-not">Prefer not to say</label>
+        </div>
+
+        <div class="form-group">
+          <label for="qualification">Highest Qualification:</label>
+          <select id="qualification" name="qualification" required>
+            <option value="">Select qualification</option>
+            <option value="high-school">High School</option>
+            <option value="diploma">Diploma</option>
+            <option value="bachelors">Bachelor's Degree</option>
+            <option value="masters">Master's Degree</option>
+            <option value="doctorate">Doctorate</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="department">Department:</label>
+          <select id="department" name="department" required>
+            <option value="">Select department</option>
+            <option value="it">Information Technology</option>
+            <option value="hr">Human Resources</option>
+            <option value="finance">Finance</option>
+            <option value="marketing">Marketing</option>
+            <option value="engineering">Engineering</option>
+            <option value="operations">Operations</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Current Address:</label>
+          <textarea
+            id="address"
+            name="address"
+            rows="4"
+            placeholder="Enter your current address"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="document">Passport Photo or Resume:</label>
+          <input
+            type="file"
+            id="document"
+            name="document"
+            accept="image/*,.pdf,.doc,.docx"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="declaration"
+            name="declaration"
+            value="accepted"
+            required
+          />
+          <label for="declaration">
+            I declare that the information provided is correct.
+          </label>
+        </div>
+
+        <div class="form-buttons">
+          <button class="submit-btn" type="submit">Submit</button>
+
+          <button class="reset-btn" type="reset">Reset</button>
+
+          <!-- This button has no action yet because help functionality
+                     will be implemented later using JavaScript or a backend. -->
+          <button class="help-btn" type="button">Need help?</button>
+        </div>
+      </form>
+
+      <h2>TechNova Office Location</h2>
+      <p>View the office location on the map below.</p>
+
+      <!-- Illustrative search map; replace with the verified office address. -->
+      <iframe
+        class="office-map"
+        src="https://maps.google.com/maps?q=TechNova%20Solutions&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        title="TechNova Solutions office map"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>
