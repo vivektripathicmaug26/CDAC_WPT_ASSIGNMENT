@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home | Vivek Tripathi</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>Vivek's Portfolio</h1></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html#about">About</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Hi, I am Vivek Tripathi</h1>
+            <p>I am learning Java Backend and Web Development.</p>
+            <a class="button" href="projects.html">View My Projects</a>
+            <button onclick="changeTheme()" id="theme-button">Light Mode</button>
+        </section>
+
+        <section id="about">
+            <div class="photo-box">
+                <img src="images/vt_passport.jpg" alt="vt_passport" width="120" height="140">
+                <p>Photo: vt_passport.jpg</p>
+            </div>
+            <div>
+                <h2>About Me</h2>
+                <p>I am from Bhopal. I completed my MCA from LNCT, Bhopal.</p>
+                <p>Currently, I am pursuing PGCP-AC at CDAC Kharghar.</p>
+                <p>My goal is to become a <span>Java Backend Developer.</span></p>
+                <a href="https://github.com/vivektripathicmaug26" target="_blank" rel="noopener">My GitHub Profile</a>
+            </div>
+        </section>
+
+        <section class="card-container">
+            <div class="card">
+                <h2>Education</h2>
+                <ol>
+                    <li>Undergraduate Studies</li>
+                    <li>MCA - LNCT, Bhopal</li>
+                    <li>PGCP-AC - CDAC Kharghar</li>
+                </ol>
+            </div>
+            <div class="card">
+                <h2>My Skills</h2>
+                <ul id="skills-list">
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>MySQL</li>
+                    <li>HTML and CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <button onclick="showSkills()" id="skills-button">Hide Skills</button>
+            </div>
+            <div class="card">
+                <h2>My Projects</h2>
+                <p>I build small projects to practise coding.</p>
+                <p>My projects include an anime website and Java exercises.</p>
+                <a href="projects.html">See My Projects</a>
+            </div>
+        </section>
+
+        <section class="simple-section">
+            <h2 id="welcome-message">Welcome to My Portfolio</h2>
+            <label for="visitor-name">Your name</label>
+            <input type="text" id="visitor-name" placeholder="Enter your name">
+            <button onclick="showWelcome()">Say Hello</button>
+        </section>
+    </main>
+    <footer>
+        <p>Made by Vivek Tripathi | HTML, CSS and JavaScript</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

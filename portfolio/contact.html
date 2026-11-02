@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact | Vivek Tripathi</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>Vivek's Portfolio</h1></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html#about">About</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Contact Me</h1>
+            <p>Fill in this form to practise JavaScript validation.</p>
+        </section>
+        <section class="simple-section">
+            <form id="contact-form" action="https://example.com/contact" method="post" onsubmit="return checkForm()" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit phone number">
+                <label for="date">Preferred Contact Date</label>
+                <input type="date" id="date" name="date">
+                <label for="enquiry">Enquiry Type</label>
+                <select id="enquiry" name="enquiry">
+                    <option>General Question</option>
+                    <option>Project Work</option>
+                    <option>Job Opportunity</option>
+                </select>
+                <p>Preferred Contact Mode</p>
+                <label class="choice"><input type="radio" id="mode-email" name="mode" value="email" checked> Email</label>
+                <label class="choice"><input type="radio" id="mode-phone" name="mode" value="phone"> Phone</label>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write at least 20 characters"></textarea>
+                <label for="cv">Upload CV (optional)</label>
+                <input type="file" id="cv" name="cv">
+                <label class="choice"><input type="checkbox" id="consent" name="consent"> I agree to be contacted.</label>
+                <p id="form-message" role="status"></p>
+                <button type="submit">Submit</button>
+                <button type="reset" onclick="clearMessage()">Reset</button>
+                <p class="note">This is a demo. No message or file will be sent.</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Made by Vivek Tripathi | HTML, CSS and JavaScript</p>
+        <a href="Vivek_Portfolio.zip" download>Download code</a>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
