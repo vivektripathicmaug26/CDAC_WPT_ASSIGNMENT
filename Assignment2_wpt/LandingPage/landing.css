@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  background-color: #fff7ed;
+  color: #432818;
+  font-family: Arial, sans-serif;
+}
+header {
+  background-color: #432818;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 20px;
+}
+header h1 {
+  font-size: 23px;
+  margin: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+#home {
+  background: linear-gradient(120deg, #ffedd5, #fed7aa);
+  text-align: center;
+  padding: 35px 15px;
+}
+h2 {
+  font-size: 25px;
+}
+span {
+  color: #9a3412;
+  font-weight: bold;
+}
+p,
+li {
+  line-height: 1.6;
+}
+#menu,
+#order,
+#about {
+  padding: 25px 20px;
+}
+#menu {
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  width: 230px;
+  background-color: white;
+  color: #432818;
+  border: 1px solid #d6b89a;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+.featured {
+  background-color: #ffedd5;
+}
+button,
+.button {
+  display: inline-block;
+  background-color: #9a3412;
+  color: white;
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+button:hover,
+.button:hover {
+  background-color: #c2410c;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+#order {
+  max-width: 650px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #d6b89a;
+  border-radius: 10px;
+}
+label {
+  display: block;
+  margin: 12px 0 6px;
+}
+input,
+select {
+  padding: 9px;
+  border: 1px solid #a88c74;
+  border-radius: 4px;
+  font-size: 14px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+#quantity {
+  width: 80px;
+}
+#order-list {
+  padding-left: 20px;
+}
+#order-list li {
+  margin-bottom: 12px;
+}
+#order-list button {
+  margin-left: 12px;
+}
+#error {
+  color: #b91c1c;
+}
+#bill {
+  white-space: pre-line;
+  background-color: #fff7ed;
+  padding: 15px;
+  border-radius: 5px;
+}
+#offer {
+  font-weight: bold;
+  color: #9a3412;
+}
+#about {
+  max-width: 650px;
+  margin: auto;
+}
+a {
+  color: #9a3412;
+}
+.note {
+  font-size: 12px;
+}
+footer {
+  text-align: center;
+  background-color: #432818;
+  color: white;
+  padding: 12px;
+  font-size: 12px;
+}

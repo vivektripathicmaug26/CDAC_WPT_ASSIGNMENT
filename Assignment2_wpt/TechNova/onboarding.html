@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding | TechNova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>TechNova HR Portal</h1><nav><a href="login.html">Login</a><a href="directory.html">Directory</a><a href="onboarding.html">Onboarding</a></nav></header>
+    <main>
+        <section class="panel form-panel">
+            <h2>New Employee Onboarding</h2>
+            <form action="https://example.com/onboarding" method="post" onsubmit="return validate()" novalidate>
+                <label for="full-name">Full Name</label><input id="full-name" name="full_name" placeholder="Enter full name"><span class="error" id="name-error"></span>
+                <label for="official-email">Official Email</label><input type="email" id="official-email" name="official_email" placeholder="name@example.com"><span class="error" id="email-error"></span>
+                <label for="temporary-password">Temporary Password</label><input type="password" id="temporary-password" name="temporary_password" placeholder="Temporary password">
+                <label for="dob">Date of Birth</label><input type="date" id="dob" name="dob">
+                <label for="joining-date">Joining Date</label><input type="date" id="joining-date" name="joining_date">
+                <label for="orientation">Orientation Slot</label><input type="datetime-local" id="orientation" name="orientation">
+                <label for="reporting-time">Reporting Time</label><input type="time" id="reporting-time" name="reporting_time">
+                <p>Gender</p><label class="choice"><input type="radio" id="male" name="gender" value="male">Male</label><label class="choice"><input type="radio" id="female" name="gender" value="female">Female</label><label class="choice"><input type="radio" id="other" name="gender" value="other">Other</label>
+                <label for="qualification">Highest Qualification</label><select id="qualification" name="qualification"><option value="">Choose qualification</option><option value="bca">BCA</option><option value="btech">BTech</option><option value="mca">MCA</option><option value="mtech">MTech</option></select><span class="error" id="qualification-error"></span>
+                <label for="department">Department</label><select id="department" name="department"><option value="">Choose department</option><option value="it">IT</option><option value="hr">HR</option><option value="finance">Finance</option><option value="sales">Sales</option></select><span class="error" id="department-error"></span>
+                <label for="address">Current Address</label><textarea id="address" name="address" rows="3" placeholder="Enter address"></textarea>
+                <label for="resume">Photo or Resume</label><input type="file" id="resume" name="resume">
+                <label class="choice"><input type="checkbox" id="declaration" name="declaration">I confirm these details are correct.</label><span class="error" id="declaration-error"></span>
+                <button id="submit-button">Submit</button><button type="reset" id="reset-button" onclick="clearErrors()">Reset</button>
+                <p id="onboarding-message" role="status"></p>
+                <p class="note">All onboarding steps are simulated. No data or files are uploaded.</p>
+            </form>
+            <iframe title="Demo office location in Kharghar" src="https://maps.google.com/maps?q=Kharghar%20Navi%20Mumbai&amp;output=embed" loading="lazy"></iframe>
+        </section></main>
+    <footer><p>TechNova Solutions | Student demo - dummy data only</p></footer>
+    <script src="js/onboarding.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | TechNova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>TechNova HR Portal</h1><nav><a href="login.html">Login</a><a href="directory.html">Directory</a><a href="onboarding.html">Onboarding</a></nav></header>
+    <main>
+        <section class="panel">
+            <h2>Employee Directory</h2>
+            <button onclick="loadEmployees()">Load Employees</button>
+            <p id="load-message" role="status">Click to load sample employee data.</p>
+            <label for="search-field">Search by</label>
+            <select id="search-field" onchange="filterEmployees()"><option value="name">Name</option><option value="email">Email</option><option value="username">Username</option></select>
+            <label for="search-text">Search</label>
+            <input id="search-text" placeholder="Type to search" onkeyup="filterEmployees()">
+            <div class="table-box"><table border="1" cellpadding="10" cellspacing="0">
+                <thead><tr><th>ID</th><th>Name</th><th>Username</th><th>Email</th><th>Phone</th><th>Department</th><th>Action</th></tr></thead>
+                <tbody id="employee-body"></tbody>
+            </table></div>
+            <p id="total">Total employees: 0</p>
+            <p id="showing"></p>
+        </section>
+        <section class="panel">
+            <h2>Add Employee</h2>
+            <form onsubmit="return addEmployee()">
+                <label for="employee-name">Name</label><input id="employee-name" placeholder="Dummy name" required>
+                <label for="department">Department</label><input id="department" placeholder="Department" required>
+                <button>Add Employee</button><p id="add-message" role="status"></p>
+            </form>
+        </section></main>
+    <footer><p>TechNova Solutions | Student demo - dummy data only</p></footer>
+    <script src="js/directory.js"></script>
+</body>
+</html>

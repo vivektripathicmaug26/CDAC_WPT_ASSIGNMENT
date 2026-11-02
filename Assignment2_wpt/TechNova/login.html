@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TechNova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>TechNova HR Portal</h1><nav><a href="login.html">Login</a><a href="directory.html">Directory</a><a href="onboarding.html">Onboarding</a></nav></header>
+    <main>
+        <div class="login-card">
+            <h2>Employee Login</h2>
+            <form action="https://example.com/login" method="post" onsubmit="return validate()" novalidate>
+                <label for="username">Username</label>
+                <input class="login-input" id="username" name="username" placeholder="Enter username">
+                <span class="error" id="username-error"></span>
+                <label for="password">Password</label>
+                <input class="login-input" type="password" id="password" name="password" placeholder="Enter password" onkeyup="checkPassword()">
+                <button type="button" onclick="togglePassword()" id="show-button">Show</button>
+                <span class="error" id="password-error"></span>
+                <p class="note">Use 8+ characters with uppercase, lowercase, number and special character.</p>
+                <button id="login-button" type="submit">Login</button>
+                <p id="login-message" role="status"></p>
+                <p>Need an account? <a href="onboarding.html">Sign Up</a></p>
+                <p class="note">Demo only. No account is authenticated.</p>
+            </form>
+        </div></main>
+    <footer><p>TechNova Solutions </p></footer>
+    <script src="js/login.js"></script>
+</body>
+</html>
